@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Muhammad Yoga Pratama</title>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="home">
+		<nav>
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li class="icon"><a href="javascript:void(0);" onclick="showNav()"><i class="fa fa-bars"></i></a></li>
+			</ul>
+		</nav>
+		<div class="jumbotron">
+			<div class="title">
+				<h1>Muhammad Yoga Pratama</h1>
+				<p>Back-end Web Developer</p>
+				<button onclick="viewProfile()">View My Profile</button>
+			</div>
+		</div>
+	</header>
+
+	<section id="about">
+		<h1 class="border-bottom">ABOUT</h1>
+		<div class="row">
+			<div class="card center">
+				<h2 class="subtitle">Who Am I?</h2>
+				<img src="assets/img/about.JPG" alt="" class="about-img">
+				<p>
+					I'm a junior a back-end web developer. I have passion in any logic behind application. I'd love to explore something new
+				</p>
+			</div>
+			<div class="center card">
+				<h2 class="subtitle">My Skills</h2>
+				<div class="items">
+					<div class="skill-item">
+						<img src="assets/img/html5.png" alt="">
+					</div>
+					<div class="skill-item">
+						<img src="assets/img/css3.png" alt="">
+					</div>
+					<div class="skill-item">
+						<img src="assets/img/js.png" alt="">
+					</div>
+					<div class="skill-item">
+						<img src="assets/img/php.png" alt="">
+					</div>
+					<div class="skill-item">
+						<img src="assets/img/laravel.png" alt="">
+					</div>
+					<div class="skill-item">
+						<img src="assets/img/mysql.png" alt="">
+					</div>
+					<div class="skill-item">
+						<img src="assets/img/git.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio" class="bg-grey">
+		<div class="block">
+			<h1 class="border-bottom">PORTFOLIO</h1>
+			<div class="list">
+				<div class="item">
+					<a href="##" id="porto1" onclick="openModal('porto1-modal')"><img src="assets/img/portfolio/podium/1.png" alt="" class="porto-img"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h1 class="border-bottom">CONTACT</h1>
+		<div class="block">
+			<div class="card">
+				<form action="https://api.slapform.com/ypratama061@gmail.com" method="POST"  class="form-contact">
+					<input type="text" name="name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="message" placeholder="Your Message" id="" cols="30" rows="10" required></textarea>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+			<h2>Feel free to discuss anything with me</h2>
+		</div>
+	</section>
+
+	<div id="porto1-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<img src="assets/img/portfolio/podium/1.png" alt="" class="modal-img">
+			<p>Podium is a platform to write anything. You can use this platform to share your knowledge or everything. Look further on github or live version : </p>
+			<a href="https://github.com/acideggs/podium-platform" class="preview" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+			<a href="https://podium-learning.herokuapp.com/" class="preview" target="_blank"><i class="fa fa-play" aria-hidden="true"></i> Preview</a>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="row">
+			<div class="icon-item"><a href="https://github.com/acideggs/"><i class="fa fa-github icon" aria-hidden="true"></i></a></div>
+			<div class="icon-item"><a href="#"><i class="fa fa-linkedin icon" aria-hidden="true"></i></a></div>
+			<div class="icon-item"><a href="https://www.instagram.com/yoga.myp/"><i class="fa fa-instagram icon" aria-hidden="true"></i></a></div>
+		</div>
+		<div class="row">
+			<p>Muhammad Yoga Pratama &copy;2020</p>
+		</div>
+	</footer>
+
+	<script src="js/style.js"></script>
+</body>
+</html>
